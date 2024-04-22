@@ -34,7 +34,7 @@ pipeline {
     }
     stage ('Send Slack Message'){
       steps {
-          
+          echo "Sending Slack Message..."
           slackSend(
             color: '#439FE0',
             message: "Deployment successful! Build ID: ${env.BUILD_ID} - Render Link: https://gallery-y0g5.onrender.com", //Render Deployment Link
