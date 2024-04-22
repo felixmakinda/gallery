@@ -40,7 +40,7 @@ pipeline {
             message: "Deployment successful! Build ID: ${env.BUILD_ID} - Render Link: https://gallery-y0g5.onrender.com", //Render Deployment Link
             channel: '#felix_ip1', // Relevant Slack Channel
             teamDomain: 'felixlearns', // Slack Team Subdomain
-            tokenCredentialId: '2bdce509-0f0d-4040-9493-3bf1519100e9' // Slack Integration Token Credential ID
+            tokenCredentialId: 'f8d585ef-ac95-492f-bf1f-8ae0ecea0e7b' // Slack Integration Token Credential ID
           )
       }
     }
