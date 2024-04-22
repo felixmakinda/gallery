@@ -1,0 +1,1 @@
+IP Project. In the Project, I am practicing how to create a Jenkins pipeline, connecting Jenkins, GitHub and Render. The communication between GitHub and Jenkins is achieved using webhooks and Ngrok. 
