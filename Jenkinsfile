@@ -5,7 +5,7 @@ pipeline {
     nodejs "nodejs"
   }
   stages {
-    stage('Checkout') {
+    stage('Initialize Git Repository') {
       steps {
         git branch: 'master', url: 'https://github.com/felixmakinda/gallery.git'
       }
