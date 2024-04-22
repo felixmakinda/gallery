@@ -32,5 +32,16 @@ pipeline {
           '''
       }
     }
+    stage ('Send Slack Message'){
+      steps {
+          slackSend(
+            color: '#439FE0',
+            message: "Deployment successful! Build ID: ${env.BUILD_ID} - Render Link: https://gallery-y0g5.onrender.com", //Render Deployment Link
+            channel: '#felix_ip1', // Relevant Slack Channel
+            teamDomain: 'felixlearns', // Slack Team Subdomain
+            tokenCredentialId: 'uSLrqWFzlln97KyGtrFuK0pM' // Slack Integration Token Credential ID
+          )
+      }
+    }
   }
 }
