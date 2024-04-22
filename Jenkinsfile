@@ -22,7 +22,7 @@ pipeline {
     stage('Deploy to Render') {
       steps {
         sh '''
-        curl - X POST https://api.render.com/deploy/srv-coj98jqcn0vc73dr3ft0?key=7jvGt4MJwZo
+        curl -X POST https://api.render.com/deploy/srv-coj98jqcn0vc73dr3ft0?key=7jvGt4MJwZo
           '''
       }
     }
